@@ -1,0 +1,135 @@
+﻿  Cart.cpp
+c:\users\martin\source\repos\homework_1_sem2\cart.h(8): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\cart.h(8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\cart.h(8): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\cart.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\cart.h(13): error C2143: syntax error: missing ',' before '*'
+c:\users\martin\source\repos\homework_1_sem2\cart.h(21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\cart.h(21): error C2143: syntax error: missing ',' before '*'
+c:\users\martin\source\repos\homework_1_sem2\cart.h(22): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\cart.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\cart.h(22): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\cart.h(26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\cart.h(26): error C2143: syntax error: missing ',' before '&'
+c:\users\martin\source\repos\homework_1_sem2\user.h(13): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(13): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(15): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(15): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(40): error C2143: syntax error: missing ',' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(41): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(41): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(42): error C2143: syntax error: missing ',' before '&'
+c:\users\martin\source\repos\homework_1_sem2\user.h(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(45): error C2143: syntax error: missing ',' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(46): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(46): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(47): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(47): error C2143: syntax error: missing ',' before '&'
+c:\users\martin\source\repos\homework_1_sem2\user.h(55): error C2061: syntax error: identifier 'Product'
+c:\users\martin\source\repos\homework_1_sem2\user.h(56): error C2061: syntax error: identifier 'Product'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(12): error C2511: 'Cart::Cart(const Product *,int)': overloaded member function not found in 'Cart'
+  c:\users\martin\source\repos\homework_1_sem2\cart.h(6): note: see declaration of 'Cart'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(13): error C2671: 'Cart::{ctor}': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(14): error C2671: 'Cart::{ctor}': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(18): error C2039: 'getProducts': is not a member of 'Cart'
+  c:\users\martin\source\repos\homework_1_sem2\cart.h(6): note: see declaration of 'Cart'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(27): error C2039: 'products': is not a member of 'Cart'
+  c:\users\martin\source\repos\homework_1_sem2\cart.h(6): note: see declaration of 'Cart'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(28): error C2039: 'getProducts': is not a member of 'Cart'
+  c:\users\martin\source\repos\homework_1_sem2\cart.h(6): note: see declaration of 'Cart'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(35): error C2039: 'products': is not a member of 'Cart'
+  c:\users\martin\source\repos\homework_1_sem2\cart.h(6): note: see declaration of 'Cart'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(38): error C2511: 'void Cart::setProducts(const Product *)': overloaded member function not found in 'Cart'
+  c:\users\martin\source\repos\homework_1_sem2\cart.h(6): note: see declaration of 'Cart'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(39): error C2671: 'Cart::setProducts': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(40): error C2671: 'Cart::setProducts': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(41): error C2671: 'Cart::setProducts': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(43): error C2671: 'Cart::setProducts': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(47): error C2039: 'getProducts': is not a member of 'Cart'
+  c:\users\martin\source\repos\homework_1_sem2\cart.h(6): note: see declaration of 'Cart'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(47): error C2270: 'getProducts': modifiers not allowed on nonmember functions
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(48): error C2355: 'this': can only be referenced inside non-static member functions or non-static data member initializers
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(63): error C2039: 'products': is not a member of 'Cart'
+  c:\users\martin\source\repos\homework_1_sem2\cart.h(6): note: see declaration of 'Cart'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(67): error C2511: 'void Cart::addProduct(const Product &)': overloaded member function not found in 'Cart'
+  c:\users\martin\source\repos\homework_1_sem2\cart.h(6): note: see declaration of 'Cart'
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(68): error C2671: 'Cart::addProduct': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\cart.cpp(69): error C2671: 'Cart::addProduct': static member functions do not have 'this' pointers
+  Menu.cpp
+  Sale.cpp
+c:\users\martin\source\repos\homework_1_sem2\user.h(12): error C3646: 'cart': unknown override specifier
+c:\users\martin\source\repos\homework_1_sem2\user.h(12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(13): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(13): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(15): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(15): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(15): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(38): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(38): error C2143: syntax error: missing ',' before '&'
+c:\users\martin\source\repos\homework_1_sem2\user.h(39): error C3646: 'getCart': unknown override specifier
+c:\users\martin\source\repos\homework_1_sem2\user.h(39): error C2059: syntax error: '('
+c:\users\martin\source\repos\homework_1_sem2\user.h(39): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(40): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(40): error C2143: syntax error: missing ',' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(41): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(41): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(41): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(42): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(42): error C2143: syntax error: missing ',' before '&'
+c:\users\martin\source\repos\homework_1_sem2\user.h(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(45): error C2143: syntax error: missing ',' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(46): error C2143: syntax error: missing ';' before '*'
+c:\users\martin\source\repos\homework_1_sem2\user.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(46): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(47): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\user.h(47): error C2143: syntax error: missing ',' before '&'
+c:\users\martin\source\repos\homework_1_sem2\user.h(55): error C2061: syntax error: identifier 'Product'
+c:\users\martin\source\repos\homework_1_sem2\user.h(56): error C2061: syntax error: identifier 'Product'
+c:\users\martin\source\repos\homework_1_sem2\sale.h(10): error C3646: 'product': unknown override specifier
+c:\users\martin\source\repos\homework_1_sem2\sale.h(10): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\sale.h(16): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\sale.h(16): error C2143: syntax error: missing ',' before '&'
+c:\users\martin\source\repos\homework_1_sem2\sale.h(26): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\sale.h(26): error C2143: syntax error: missing ',' before '&'
+c:\users\martin\source\repos\homework_1_sem2\sale.h(27): error C3646: 'getProduct': unknown override specifier
+c:\users\martin\source\repos\homework_1_sem2\sale.h(27): error C2059: syntax error: '('
+c:\users\martin\source\repos\homework_1_sem2\sale.h(27): error C2238: unexpected token(s) preceding ';'
+c:\users\martin\source\repos\homework_1_sem2\user.h(6): error C2011: 'User': 'class' type redefinition
+  c:\users\martin\source\repos\homework_1_sem2\user.h(6): note: see declaration of 'User'
+c:\users\martin\source\repos\homework_1_sem2\product.h(12): error C2079: 'Product::seller' uses undefined class 'User'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(9): error C2027: use of undefined type 'User'
+  c:\users\martin\source\repos\homework_1_sem2\user.h(6): note: see declaration of 'User'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(11): error C2511: 'Sale::Sale(double,const Product &,const User &,const User &)': overloaded member function not found in 'Sale'
+  c:\users\martin\source\repos\homework_1_sem2\sale.h(7): note: see declaration of 'Sale'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(12): error C2671: 'Sale::{ctor}': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(13): error C2671: 'Sale::{ctor}': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(14): error C2671: 'Sale::{ctor}': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(15): error C2671: 'Sale::{ctor}': static member functions do not have 'this' pointers
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(18): error C2027: use of undefined type 'User'
+  c:\users\martin\source\repos\homework_1_sem2\user.h(6): note: see declaration of 'User'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(20): error C2027: use of undefined type 'User'
+  c:\users\martin\source\repos\homework_1_sem2\user.h(6): note: see declaration of 'User'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(21): error C2039: 'getProduct': is not a member of 'Sale'
+  c:\users\martin\source\repos\homework_1_sem2\sale.h(7): note: see declaration of 'Sale'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(22): error C2027: use of undefined type 'User'
+  c:\users\martin\source\repos\homework_1_sem2\user.h(6): note: see declaration of 'User'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(25): error C2143: syntax error: missing ';' before '&'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(25): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(25): error C2825: 'Sale': must be a class or namespace when followed by '::'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(25): error C2227: left of '->Sale' must point to class/struct/union/generic type
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(25): error C2510: 'Sale': left of '::' must be a class/struct/union
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(25): error C2143: syntax error: missing ',' before '&'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(25): error C2059: syntax error: '{'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(25): error C2143: syntax error: missing ';' before '{'
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(25): error C2447: '{': missing function header (old-style formal list?)
+c:\users\martin\source\repos\homework_1_sem2\sale.cpp(38): error C2825: 'Sale': must be a class or namespace when followed by '::'
+  INTERNAL COMPILER ERROR in 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe'
+      Please choose the Technical Support command on the Visual C++
+      Help menu, or open the Technical Support help file for more information
