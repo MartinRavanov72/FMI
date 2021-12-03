@@ -1,0 +1,20 @@
+/* елементите title, description, name и link, които са надолу по йерархията на елемента textinput, имат еднакъв стил */
+
+textinput title,
+textinput description,
+textinput name,
+textinput link {
+    color: red;
+}
+
+/* елементите title, description и link, които са надолу по йерархията на елемента item, имат различни стилове */
+
+item title{
+    color: blue;
+}
+item description {
+    color: green;
+}
+item link {
+    color: orange;
+}

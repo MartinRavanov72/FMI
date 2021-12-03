@@ -1,0 +1,61 @@
+/* стиловете от html са в отделен css файл */
+
+body {
+    background-color: #FFFF00;
+}
+
+/* взимаме общите стиловете за table елементите */
+
+table {
+    border: 3px solid #111111;
+    padding: 0px;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+/* взимаме общите стиловете за td елементите */
+
+td{
+    width: 50%;
+    border: 1px solid #111111;
+}
+
+/* групираме по базовите характеристики на p елементите */
+
+.h1 {
+    color: #008080;
+    font-size: 23px;
+    font-family: "Arial";
+}
+
+/* специфичните стилове на двете таблици */
+
+.blue {
+    background-color: #00FFFF;
+}
+
+.green {
+    background-color: #00FF00;
+}
+
+/* специфичните стилове за елементите */
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* стиловете на последните p елементи */
+
+.normal {
+    font-family: "Arial";
+    color: #996600;
+}

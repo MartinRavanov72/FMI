@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="bank">
+		<xs:complexType>
+			<xs:all> <!-- така може да окажем, че подредбата на под-елементите няма значение-->
+				<xs:element name="accounts"> <!-- комплексен локален тип -->
+					<xs:complexType>
+						<xs:all> <!-- така може да окажем, че подредбата на под-елементите няма значение-->
+							<xs:element ref="saving_accounts" />
+							<xs:element ref="checking_accounts" />
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="customers" />
+				<xs:element ref="customer_accounts" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="saving_accounts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="saving_account" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="saving_account"> <!-- Комплексен глобален тип-->
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="balance" type="xs:integer" />
+			</xs:sequence>	
+			<xs:attribute name="id" type="xs:ID" use="required" /> <!-- уникален идентификатор -->
+			<xs:attribute name="interest" type="xs:decimal" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="checking_accounts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="checking_account" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="checking_account">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="balance" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required" /> <!-- уникален идентификатор -->
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="balance">
+		<xs:simpleType>
+			<xs:restriction base="xs:integer"> <!-- Балансът на сметката не може да бъде по-малък от -5000 :  рестрикция -->
+				<xs:minInclusive value="-5000" /> 
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="customers"> <!-- Комплексен глобален тип-->
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="customer" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="customer">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="address" type="xs:string" />
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:ID" use="required" /> <!-- уникален идентификатор -->
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="customer_accounts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="customer_account" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="customer_account">
+		<xs:complexType>
+			<xs:attribute name="c_id" type="xs:IDREF" use="required" /> <!-- референция към уникален идентификатор -->
+			<xs:attribute name="ac_id" type="xs:IDREF" use="required" /> <!-- референция към уникален идентификатор -->
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+	
+<!-- Както при първата задача има атрибути, елементи, сложни и прости типове и т.н-->
+			

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Ex 4</title>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <p>This is p</p>
+        <ul>
+            <li>El 1</li>
+            <li>El 2</li>
+        </ul>
+    </body>
+</html>
+
+<!-- Трябва да включим публичната dtd диаграма и да използваме някои от определените там елементи-->

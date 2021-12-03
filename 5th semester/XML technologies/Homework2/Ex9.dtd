@@ -1,0 +1,21 @@
+<!ENTITY % titleEntity "title"> <!-- параметризирано entity за елемента title -->
+<!ENTITY % channelAllElements "(item+, %titleEntity;, link, image*, language?, description)" > <!-- параметрично entity за всички под-елементи от зад 5-->
+<!ENTITY % conditionAll "INCLUDE"> <!-- може и да е IGNORE-->
+<![%conditionAll; [<!ELEMENT channel %channelAllElements;>]]> <!-- условна секция -->
+<!ENTITY % channelNeededElements "(item+, %titleEntity;, link, description)"> <!-- параметрично entity за задължителните под-елементи от зад 5-->
+<!ENTITY % conditionNeeded "IGNORE"> <!-- може и да е INCLUDE-->
+<![%conditionNeeded; [<!ELEMENT channel %channelNeededElements;>]]> <!-- условна секция -->
+<!ATTLIST channel version CDATA #REQUIRED>
+<!ELEMENT item ((%titleEntity;, link, description?) | (%titleEntity;, description?, link) | (link, %titleEntity;, description?) | (link, description?, %titleEntity;) | (description?, %titleEntity;, link) | (description?, link, %titleEntity;) )>
+<!ELEMENT %titleEntity; (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ENTITY ourSite "https://www.fmi.uni-sofia.bg/"> <!-- Общо entity, задаващо стойността на елемента link на image-->
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT image (%titleEntity; | link | url)+> <!-- така например ползваме параметризираното entity-->
+<!ATTLIST image src ENTITY #REQUIRED> <!-- така ще използваме jpg или png enitity-тата-->
+<!NOTATION JPG SYSTEM "image/jpeg"> <!-- вътрешна декларация на нотация за image/jpeg-->
+<!ENTITY jpgEntity SYSTEM "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sofia_University_-_FMI_2.jpg/1200px-Sofia_University_-_FMI_2.jpg" NDATA JPG> <!-- enitity, използващо JPG нотацията-->
+<!NOTATION PNG PUBLIC "png" "PNG"> <!-- външна декларация на нотация за image/png-->
+<!ENTITY pngEntity PUBLIC "png" "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sofia_University_-_FMI_2.jpg/1200px-Sofia_University_-_FMI_2.png" NDATA PNG> <!-- enitity, използващо PNG нотацията-->
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT language (#PCDATA)>

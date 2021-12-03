@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<book xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="7.xsd"> <!-- ще се валидира от схемата: root елемента трябва да е book-->
+    <chapters> <!-- под-елемент трябва да е chapters-->
+        <chapter xlink:type="simple" xlink:href="7.link.xml#xpointer(id('number1'))" xlink:show="new"> <!-- имаме unbound под-елементи chapter с 3 задължителни атрибута-->
+            <content> <!-- всеки от тях има под-елемент content със string съдържание -->
+               Test
+           </content>
+        </chapter>
+        <chapter xlink:type="simple" xlink:href="7.link.xml#xpointer(id('number2'))" xlink:show="new">
+            <!-- чрез xlink:type simple указваме, че xlink връзката е simple, xlink:href ни указва xpointer израза, а именно: във файла 7.link.xml ще търсим чрез xpointer елемент с id = number2, атрибута xlink:show="new" ще отвори ресурса в нов прозорец или таб -->
+            <content>
+               Test
+           </content>
+        </chapter>
+    </chapters>
+</book>

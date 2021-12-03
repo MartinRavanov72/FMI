@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<recipe author="Анонимен">
+    <name>Бисквитена торта</name>
+    <address>
+        <site>www.recipes.com</site>
+    </address>
+    <ingredients>
+        <list>
+            <item number="1">пакет бисквити</item>
+            <item number="1">кофичка кисело мляко</item>
+            <item number="1">бурканче сладко</item>
+            <item number="1 супена лъжица">пудра захар</item>
+            <item grams="50">орехи</item>
+        </list>
+    </ingredients>
+    <images>
+        <image>https://www.oetker.bg/Recipe/Recipes/oetker.bg/bg-bg/dessert/image-thumb__69765__RecipeDetailsLightBox/biskvitena-torta-italiya.jpg</image>
+        <image>https://www.fantastico.bg/attachments/Recipe/118/gallery/kralska-biskvitena-torta_thumb-detail.jpg</image>
+    </images>
+    <process>
+        <p>Разбъркваме млякото и сладкото. Един ред бисквити, един ред от сместа и пак така, най-отгоре поръсваме орехи. Изчаква се до омекване на бисквитите.</p>
+        <p>
+            <i>Много вкусно!</i>
+        </p>
+    </process>
+</recipe>
+
+<!-- Добавяме 2 нови елемента item,
+     заменяме елемента author с атрибут,
+     добавяме атрибути number и grams на елемента item,
+     заменяме атрибута site с под-елемент на address,
+     добавяме елемент images с 2 под-елемента image -->

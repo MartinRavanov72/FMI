@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="collection">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="description"/>
+				<xs:element ref="recipe" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="description">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:any />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="recipe">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="title" type="xs:string"/>	
+				<xs:element ref="ingredient" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="preparation"/>
+				<xs:element name="comment" type="xs:string" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="nutrition"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ingredient">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="preparation" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+			<xs:attributeGroup ref="ingredientAttributes"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="preparation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="step" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="nutrition">
+		<xs:complexType>
+			<xs:attributeGroup ref="nutritionAttributes" />
+		</xs:complexType>
+	</xs:element>
+	<xs:attributeGroup name="ingredientAttributes">
+		<xs:attribute name="name" type="xs:string" use="required" />
+		<xs:attribute name="amount" type="xs:string" />
+		<xs:attribute name="unit" type="xs:string"/>
+	</xs:attributeGroup>
+	<xs:attributeGroup name="nutritionAttributes">
+		<xs:attribute name="protein" type="xs:string" use="required"/>
+		<xs:attribute name="carbohydrates" type="xs:string" use="required"/>
+		<xs:attribute name="fat" type="xs:string" use="required"/>
+		<xs:attribute name="calories" type="xs:string" use="required"/>
+		<xs:attribute name="alcohol" type="xs:string"/>
+	</xs:attributeGroup>
+</xs:schema>
+
+<!-- Имаме root елемент collection. Превръщаме от dtd в schema като под-елементите в dtd (в скобите) ги сложим като под-елементи в схемата. Всеки един от тях може да е от сложен или прост тип.
+	В този случай имаме от сложни типове и от string, както и any - description. Знаците * + ? от dtd се задават с minOccurs и maxOccurs (съответно 0;unbounded     1;unbounded      0;1). Имаме и ref: така реферираме към елемент или група от атрибути, които сме описали глобално. 
+	Имаме и групи от атрибути: атрибутите имат име тип и use: required е когато в dtd е REQUIRED и optional(по подразбиране) е когато в dtd е IMPLIED-->

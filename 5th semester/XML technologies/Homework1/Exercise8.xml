@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<cinema name="Cinema City Paradise">
+	<address>София, бул. Черни връх 100, в сградата на Paradise Center</address>
+	<phone>02 903 74 74</phone>
+	<email>info.paradise@cinemacity.bg</email>
+	<info>Мултиплекс Cinema City Парадайз разполага с: 
+		14 модерни киносалона с 2166 места
+		първата 4DX зала в България
+		съоръжения за посетители в инвалидни колички
+		Посетителите на Парадайз център ползват 2 часа безплатен паркинг. За допълнителни 90 минути е необходимо да валидирате талона си за паркиране  на касите при закупуване на билетите за кино.
+	</info>
+	<website>cinemacity.bg</website>
+	<movies>
+		<movie>
+			<title>100% Вълк</title>
+			<timetables>
+				<timetable>
+					<date>21.10.2021</date>
+					<hours>
+						<hour>13:10</hour>
+						<hour>15:40</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>22.10.2021</date>
+					<hours>
+						<hour>13:40</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>23.10.2021</date>
+					<hours>
+						<hour>11:30</hour>
+						<hour>13:40</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>24.10.2021</date>
+					<hours>
+						<hour>11:30</hour>
+						<hour>13:40</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>25.10.2021</date>
+					<hours>
+						<hour>13:40</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>26.10.2021</date>
+					<hours>
+						<hour>13:40</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>27.10.2021</date>
+					<hours>
+						<hour>13:40</hour>
+					</hours>
+				</timetable>
+			</timetables>
+		</movie>
+		<movie>
+			<title>Бебе Бос: Семейни работи</title>
+			<timetables>
+				<timetable>
+					<date>21.10.2021</date>
+					<hours>
+						<hour>15:40</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>22.10.2021</date>
+					<hours>
+						<hour>13:50</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>23.10.2021</date>
+					<hours>
+						<hour>11:10</hour>
+						<hour>13:50</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>24.10.2021</date>
+					<hours>
+						<hour>11:10</hour>
+						<hour>13:50</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>25.10.2021</date>
+					<hours>
+						<hour>13:50</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>26.10.2021</date>
+					<hours>
+						<hour>13:50</hour>
+					</hours>
+				</timetable>
+				<timetable>
+					<date>27.10.2021</date>
+					<hours>
+						<hour>13:50</hour>
+					</hours>
+				</timetable>
+			</timetables>
+		</movie>
+	</movies>
+</cinema>
+
+<!-- Имаме root елемент cinema с атрибут за име, информация за киното: в отделни под-елементи: address, phone, email, info, website.
+     Информацията за филмите: елементът movies има под-елементи movie: за всеки филм имаме име и множество от графици: всеки от тях има дата и множество от часове-->

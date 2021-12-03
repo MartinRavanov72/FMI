@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE channel SYSTEM "Ex5.dtd">
+<channel version="2.0">
+    <item>
+        <link>https://softuni.bg/</link>
+        <title>Softuni</title>
+        <description>Software University</description>
+    </item>
+    <item>
+        <title>Telerik</title>
+        <link>https://www.telerikacademy.com/</link>
+    </item>
+    <title>FMI</title>
+    <link>https://www.fmi.uni-sofia.bg/</link>
+    <image>
+        <url>https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sofia_University_-_FMI_2.jpg/1200px-Sofia_University_-_FMI_2.jpg</url>
+        <title>FMI</title>
+        <link>Our new look 1</link>
+    </image>
+    <image>
+        <title>FMI</title>
+        <url>https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sofia_University_-_FMI_2.jpg/1200px-Sofia_University_-_FMI_2.jpg</url>
+        <link>Our new look 2</link>
+    </image>
+    <image>
+        <url>https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sofia_University_-_FMI_2.jpg/1200px-Sofia_University_-_FMI_2.jpg</url>
+        <link>Our new look 3</link>
+        <title>FMI</title>
+    </image>
+    <description>Info about FMI</description>
+</channel>
+
+<!-- Създаваме такъв xml файл, че да е валиден за диаграмата, както и за 5те подточки(атрибут, задължителни и незадължителни елементи, последователността и честотата им):
+     имаме няколко item-a и няколко image-a, поне 1 item е задължителен, а image може да имаме нула или повече пъти. Подредбата на под-елементите на item и image може да е всякаква (при item description може да се среща нула или веднъж). -->

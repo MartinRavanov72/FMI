@@ -1,0 +1,52 @@
+/* това е третата част: така включваме другите 2 части в тази */
+
+@import url('1.1.css');
+@import url('1.2.css');
+
+ul li {
+    color: #660000;
+    background-color: white;
+    list-style-type: disc;
+}
+
+ul li li {
+    color: #660000;
+    background-color: white;
+    list-style-type: circle
+}
+
+ol li {
+    color: #660000;
+    background-color: white;
+    list-style-type: upper-roman
+}
+
+ol li li {
+    color: #660000;
+    background-color: white;
+    list-style-type: lower-alpha
+}
+
+a:link {
+    color: blue;
+    background-color: white;
+    text-decoration: none
+}
+
+a:active {
+    color: blue;
+    background-color: red;
+    text-decoration: none
+}
+
+a:visited {
+    color: blue;
+    background-color: white;
+    text-decoration: none
+}
+
+a:hover {
+    color: purple;
+    background-color: yellow;
+    text-decoration: underline
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE Course_Catalog SYSTEM "courseCatalog.dtd">
+<Course_Catalog>
+    <Department Code="EE">
+        <Title>Economics Education</Title>
+        <Chair>
+            <Professor>
+                <First_Name>Lohn</First_Name>
+                <Last_Name>Locke</Last_Name>
+            </Professor>
+        </Chair>
+        <Course Number="EE108A">
+            <Title>Microeconomics</Title>
+            <Instructors>
+                <Lecturer>
+                    <First_Name>John</First_Name>
+                    <Last_Name>Locke</Last_Name>
+                </Lecturer>
+                <Professor>
+                    <First_Name>Peter</First_Name>
+                    <Last_Name>Grant</Last_Name>
+                </Professor>
+                <Professor>
+                    <First_Name>Paul</First_Name>
+                    <Last_Name>McKinley</Last_Name>
+                </Professor>
+            </Instructors>
+        </Course>
+        <Course Number="EE108B" Enrollment="60">
+            <Title>Macroeconomics</Title>
+            <Description>Introduction to Macroeconomics</Description>
+            <Instructors>
+                <Professor>
+                    <First_Name>Joe</First_Name>
+                    <Middle_Initial>Solomons</Middle_Initial>
+                    <Last_Name>Johnson</Last_Name>
+                </Professor>
+                <Professor>
+                    <First_Name>Emily</First_Name>
+                    <Middle_Initial>Howe</Middle_Initial>
+                    <Last_Name>Brown</Last_Name>
+                </Professor>
+            </Instructors>
+            <Prerequisites>
+                <Prereq>EE108A</Prereq>
+            </Prerequisites>
+        </Course>
+    </Department>
+    <Department Code="LING">
+        <Title>Linguistics</Title>
+        <Chair>
+            <Professor>
+                <First_Name>Karen</First_Name>
+                <Middle_Initial>S.</Middle_Initial>
+                <Last_Name>F.</Last_Name>
+            </Professor>
+        </Chair>
+        <Course Number="LING180">
+            <Title>Microeconomics</Title>
+            <Instructors>
+                <Lecturer>
+                    <First_Name>Stephanie</First_Name>
+                    <Middle_Initial>M.</Middle_Initial>
+                    <Last_Name>Johanssen</Last_Name>
+                </Lecturer>
+            </Instructors>
+        </Course>
+    </Department>
+</Course_Catalog>
+
+<!-- В dtd имаме Course_Catalog (Department+) : + означава 1 или повече, затова имаме 2 под-елемента Department на root елемента Course_Catalog, всеки от тях със задължителен атрубут от 3 възможни стойности и елементи Title, Chair и 1(или 2) Course : в dtd имаме Department (Title, Chair, Course+).
+     Елементът Chair има един елемент Professor, който може да има, може и да няма Middle_Initial под-елемент : в dtd имаме Professor (First_Name, Middle_Initial?, Last_Name) : ? означава нула или един път.
+     Всеки Course има Title, един или нула Description, Instructors, един или нула Prerequisites: съставен от поне 1 под-елемент Prereq.
+     Instructors е съставен или от {един Lecturer(аналогичен на Professor) и нула или повече Professor елемента} или {поне един Professor елемента и един или нула Lecturer}-->

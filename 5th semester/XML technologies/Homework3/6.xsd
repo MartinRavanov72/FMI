@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://www.w3.org/1999/XHTML" schemaLocation="http://www.w3.org/XHTML/xhtml.xsd" /> <!-- импортиране на външна схема-->
+    <xs:redefine schemaLocation="bank.xsd">
+        <!-- предефинира типа balance и customerExt от външната за нея XML схема - bank.xsd-->
+        <xs:complexType name="customerExt">
+            <xs:complexContent>
+                <xs:extension base="customerExt">
+                    <!-- новият тип customerExt съдържа допълнително нов под-елемент image-->
+                    <xs:sequence>
+                        <xs:element name="image" type="image" />
+                    </xs:sequence>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+        <xs:simpleType name="minBalance">
+            <xs:restriction base="minBalance">
+                <!-- новият тип balance не трябва да бъде по-малък от -4200-->
+                <xs:minInclusive value="-4200" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:redefine>
+    <xs:complexType name="image">
+        <!-- елемент от тип base64Binary-->
+        <xs:simpleContent>
+            <xs:extension base="xs:base64Binary">
+                <xs:attribute name="src" type="xs:string" use="required" />
+                <xs:attribute name="type">
+                    <!-- атрибут type от тип нотация-->
+                    <xs:simpleType>
+                        <xs:restriction base="xs:NOTATION">
+                            <xs:enumeration value="gif" />
+                            <xs:enumeration value="jpeg" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:notation name="gif" public="image/gif" system="view.exe" /> <!-- дефинираме двете нотации -->
+    <xs:notation name="jpeg" public="image/jpeg" system="view.exe" />
+</xs:schema>

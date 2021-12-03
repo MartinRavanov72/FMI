@@ -1,0 +1,62 @@
+declare function local:find_Tracks_Sorted() as element()* {
+    for $t in //tracklist[@num = "1"]/track
+    order by $t ascending
+    return $t
+}; 
+
+//така декларираме функция с име find_Tracks_Sorted, която не приема параметри, връща 0 или повече елементи, и има префикс local. 
+
+local:find_Tracks_Sorted()
+
+// така я извикаваме
+
+
+
+
+
+
+
+declare function local:find_Records() as element()* {
+    element records {
+	    for $е in //cd
+		    return
+   			    element record {
+     			    attribute cd_ID {$е/@id}, attribute artist {$е/artist},
+     			    element info {
+       				    text { "Title: " }, text { $е/title }, text { ", Year: " }, text{ $е/year }, text { ", Track numbers: " }, text{ count($е//track) }
+     			    }
+   			    }
+    }
+};
+
+//така декларираме функция с име find_Records, която не приема параметри, връща 0 или повече елементи, и има префикс local. 
+
+local:findRecords()
+
+// така я извикаваме
+
+
+
+
+
+
+
+
+
+declare function local:find_Tracks() as element()* {
+    for $e in //cd
+	    return
+   		    element tracks {
+      		    for $t in $e//track/text()
+      			    return element track {
+      				    text{ $t }, text{ " " }
+     			    }
+   		    }
+};
+
+//така декларираме функция с име find_Tracks, която не приема параметри, връща 0 или повече елементи, и има префикс local. 
+
+local:find_Tracks()
+
+// така я извикаваме
+ 

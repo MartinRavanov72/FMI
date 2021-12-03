@@ -1,0 +1,69 @@
+/* общи стилове */
+
+p {
+    color: brown;
+}
+
+p[lang] { /* имащ атрибут lang */
+    color: black;
+}
+
+/* стилове на класовете */
+
+.warning {
+    color: red;
+}
+
+.warning span {
+    color: green;
+}
+
+.warning span:not([lang]) { /* нямащ атрибут lang */
+    color: blue;
+    background: yellow;
+}
+
+/* на конкретни елементи */
+
+#maincontent {
+    color: green;
+    border: 1px solid blue;
+}
+
+p:nth-child(1){  /* първият такъв елемент */
+    color: yellow;
+    background: green;
+}
+
+/* край на първа част. тук по-долните стилове най-често са по-конкретни и override-ват по-горните стиловете */
+
+/* общи стилове за div елементите, а по-долу по-конкретни */
+
+div {
+    color: red;
+}
+
+p+div { /* елемент div, намиращ се веднага след елемент p */
+    color: orange;
+    margin-left: 1.5em;
+    text-transform: uppercase;
+}
+
+code+div { /* елемент div, намиращ се веднага след елемент code */
+    color: green;
+}
+
+
+div+p { /* елемент p, намиращ се веднага след елемент div */
+    color: blue;
+}
+
+div+p:first-letter { /* само за първата буква на елемент p, намиращ се веднага след елемент div */
+    color: orange;
+    font-size: 2em;
+}
+
+div+p::first-line { /* само за първия ред на елемент p, намиращ се веднага след елемент div */
+    color: yellow;
+    background-color: green;
+}

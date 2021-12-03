@@ -1,0 +1,20 @@
+<!ELEMENT games (game)*>
+<!ELEMENT game (home-team, ex-team, scores, yellows, reds)>
+<!ATTLIST game score CDATA #REQUIRED>
+<!ELEMENT home-team (#PCDATA)>
+<!ELEMENT ex-team (#PCDATA)>
+<!ELEMENT scores (score)*>
+<!ELEMENT score (player)>
+<!ATTLIST score me CDATA #REQUIRED>
+<!ATTLIST score type (penalty|normal) #IMPLIED>
+<!ELEMENT player (#PCDATA)>
+<!ELEMENT yellows (player)*>
+<!ELEMENT reds (player)*>
+
+<!-- Имаме root елемент games с нула или повече под-елементи game,
+     елементът game има задължителен атрибут score от тип cdata,
+     има под-елементи home-team (тип pcdata), ex-team (тип pcdata), scores: с нула или повече под-елементи score, 
+     елемент yellows: с нула или повече под-елементи player,
+     елемент reds: аналогично,
+     елемент score има един под-елемент player от тип pcdata, score има задължителен атрибут me (тип cdata) и optional атрибут type със стойности field или pentalty,
+     елемент player от тип pcdata -->

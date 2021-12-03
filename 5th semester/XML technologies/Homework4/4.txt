@@ -1,0 +1,46 @@
+for $t in //tracklist[@num = "1"]/track
+order by $t ascending
+return $t/text()
+
+//взимаме всеки елемент track, който е дете на елемента tracklist с атрибут num = 1, подреждаме в азбучен ред (чрез ascending) и връщаме текста на елемента
+
+for $t in //tracklist[@num = "1"]/track
+order by $t descending
+return $t/text()
+
+// descending, следователно е намаляващ ред, т.е обратен азбучен ред
+
+
+element records {
+	for $е in //cd
+		return
+   			element record {
+     			attribute cd_ID {$е/@id}, attribute artist {$е/artist},
+     			element info {
+       				text { "Title: " }, text { $е/title }, text { ", Year: " }, text{ $е/year }, text { ", Track numbers: " }, text{ count($е//track) }
+     			}
+   			}
+}
+
+// връщаме елемент records, който за всеки елемент cd, връща елемент record с атрибут cd_ID със стойност атибута id на cd-то, и атрибут artist със стойност под-елемента artist,
+ елемент info с текстова стойност title, year и броя на под-елементите track.
+
+
+
+
+
+for $e in //cd
+	return
+   		element tracks {
+      		for $t in $e//track/text()
+      			return element track {
+      				text{ $t }, text{ " " }
+     			}
+   		}
+
+
+// за всеки елемент cd, връщаме елемент tracks, който съдържа елементи track с текстовото му съдържание
+
+
+
+

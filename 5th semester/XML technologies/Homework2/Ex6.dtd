@@ -1,0 +1,16 @@
+<!ELEMENT games (game)*>
+<!ELEMENT game (home-team, ex-team, scores, yellows, reds)>
+<!ATTLIST game score CDATA #REQUIRED>
+<!ELEMENT home-team (#PCDATA)>
+<!ELEMENT ex-team (#PCDATA)>
+<!ELEMENT scores (score)*>
+<!ELEMENT score (player)>
+<!ATTLIST score me CDATA #REQUIRED>
+<!ATTLIST score type (penalty|normal) #IMPLIED>
+<!ELEMENT player (#PCDATA)>
+<!ELEMENT yellows (player)*>
+<!ELEMENT reds (player)*>
+
+<!-- Като 2ра задача: имаме 2 отбора, крайният резултат е представен чрез атрибута score на game.
+     Всеки елемент score има под-елемент player - играчът, отбелязъл гол и атрибут me : в коя минута.
+     Елементите yellow и red имат нула или повече под-елементи player : играчите с жълти/червени картони -->

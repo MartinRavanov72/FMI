@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<bookstore>
+    <book category="cooking book">
+        <title lang="english">Everyday Italian</title>
+        <author>Giada De Laurentiis</author>
+        <year>2005</year>
+        <price>30.00</price>
+    </book>
+</bookstore>
+
+<!-- Имаме един root елемент bookstore, 
+     под-елемент book с артибут category, с под-елементи:
+     title (с атрибут lang), author, year, price (всеки от тях с текстово съдържание) -->

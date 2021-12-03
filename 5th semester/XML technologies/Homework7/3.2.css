@@ -1,0 +1,46 @@
+/* default-ни стилове */
+/* елементите title, description и link, които са надолу по йерархията на елемента item, имат различни стилове */
+
+item title {
+    color: blue;
+}
+
+item description {
+    color: green;
+}
+
+item link {
+    color: orange;
+}
+
+/* когато сме на екран и той е с ширина по-голяма от 480px, имат други стилове */
+
+@media screen and (min-width: 480px) {
+    item title {
+        color: red;
+    }
+
+    item description {
+        color: pink;
+    }
+
+    item link {
+        color: violet;
+    }
+}
+
+/* когато сме на принтер, имат други стилове */
+
+@media print {
+    item title {
+        color: gray;
+    }
+
+    item description {
+        color: black;
+    }
+
+    item link {
+        color: brown;
+    }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<strings>
+    <string>∀ x ∈ {y-10, y+10} ∃ i</string>
+    <string>Einführung</string>
+    <string>Γεια Γιάννη</string>
+    <string>嗨你好</string>
+</strings>
+
+<!-- Тук трябва да използваме encoding utf-8, тъй като тези символи не са само латински -->

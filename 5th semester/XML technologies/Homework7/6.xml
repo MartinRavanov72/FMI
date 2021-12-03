@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<book xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="6.xsd"> <!-- ще се валидира от схемата: root елемента трябва да е book-->
+    <chapters> <!-- под-елемент трябва да е chapters-->
+        <xi:include href="6.1.xml" parse="xml"> <!-- включваме единия под-елемент chapter (като xml): той има под-елемент content-->
+            <xi:fallback><!-- чрез fallback елемента-->
+                <chapter> <!-- ако ресурса не е наличен, ще се включи този chapter елемент -->
+                    <content> XInclude was not able to proccess it</content>
+                </chapter>
+            </xi:fallback>
+        </xi:include>
+        <xi:include href="6.2.xml" parse="xml"> <!-- аналогично -->
+            <xi:fallback>
+                <chapter>
+                    <content> XInclude was not able to proccess it</content>
+                </chapter>
+            </xi:fallback>
+        </xi:include>
+    </chapters>
+</book>

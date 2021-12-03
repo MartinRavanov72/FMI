@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<scientists:record xmlns:scientists="http://scientists.com" xmlns:books="http://books.com">
+    <scientists:name>Miller</scientists:name>
+    <scientists:title>Dr. </scientists:title>
+    <scientists:publications>
+        <books:book>
+            <books:title>A true story</books:title>
+            <books:description>A real cool publication</books:description>
+        </books:book>
+    </scientists:publications>
+</scientists:record>
+
+<!-- За да обединим двата xml документа, трябва да използваме namespaces, тъй като има дублиращи се елементи title, затова използваме 2 пространства на имена: scientists(за учения) и books(за неговата книга).
+     Когато имаме валидни URI, може да ги поставим след xmlns:scientists= и xmlns:books= в кавички -->

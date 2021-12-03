@@ -1,0 +1,20 @@
+self::node()/descendant-or-self::tracklist/attribute::num           // self::node()/descendant-or-self:: е екивалентно на "//", търсим стойността на атрибута num на елемента tracklist
+//descendant-or-self::year          // търсим елемента year
+
+//descendant-or-self::tracklist/attribute::num          //избираме атрибутa num на елемента tracklist
+//descendant-or-self::cd/attribute::id              //избираме атрибутa id на елемента cd
+
+//descendant-or-self::track[matches(text(), "Doschitay do sta \(Countdown\)")]/preceding::track         //избираме елемента track, който се намира преди елемента track (preceding::) с конкретната стойност
+
+//descendant-or-self::track[matches(text(), "Doschitay do sta \(Countdown\)")]/following::track          //избираме елемента track, който се намира след елемента track (following::) с конкретната стойност
+
+//descendant-or-self::track[matches(text(), "Doschitay do sta \(Countdown\)")]/following::track[attribute::length="4:04"]           //избираме елемента track с атрибут length = "4:04", който се намира след елемента track (following::) с конкретната стойност
+
+//descendant-or-self::cd/child::*/text()            // взимаме стойностите на всички под-елементи (child::*) на cd
+
+//descendant-or-self::*[attribute::id]          // взимаме стойностите на всички елементи (//descendant-or-self::*), които имат атрибут id (attribute::Id)
+
+//descendant-or-self::*[attribute::*]           // взимаме стойностите на всички елементи, които имат какъвто и да е атрибут (attribute::*)
+
+max(self::node()//descendant-or-self::*/attribute::num)         //намираме максималната стойност на атрибутите num
+

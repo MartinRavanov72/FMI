@@ -1,0 +1,11 @@
+<!ELEMENT channel (item+, title, link, image*, language?, description)>
+<!ATTLIST channel version CDATA #REQUIRED>
+<!ELEMENT item ((title, link, description?) | (title, description?, link) | (link, title, description?) | (link, description?, title) | (description?, title, link) | (description?, link, title) )>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT image (title | link | url)+>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+
+<!-- Подреждате dtd файла така, че да ни е удобен (първо root елемента, после под-елементите му (с техните атрибути, ако има такива) и т.н)-->
